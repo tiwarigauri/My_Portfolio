@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gauri Tiwari's Website</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/typed.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="#" class="logo">Software <span>Developer</span></a>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#learning">Learning</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---------Home Section--------------->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="two">Hey</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Gauri Tiwari</h1>
+			<p>And I'm a <span id="ani"></span></p>
+			<div class="button">
+				<a href="./Assets/Gauri_Tiwari_Software_Developer_Resume.pdf" class="btn">Download Resume</a>
+			</div>
+		</div>
+	</section>
+
+	<!---------about Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/about.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Full Stack Developer</h4>
+			<p>Experienced Software Developer with a passion for developing innovative programs & manually testing it,
+				that expedite the efficiency and effectiveness of organizational success.
+			</p>
+			<a href="https://www.linkedin.com/in/tiwarigauri/" class="btn">Hire Me</a>
+		</div>
+	</section>
+
+	<!-----------Skills Section-------------->
+	<section class="skills" id="skills">
+		<div class="main-text">
+			<h2><span>My </span>Skills</h2>
+		</div>
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="img/html.png">
+			</div>
+
+			<div class="row">
+				<img src="img/css.png">
+			</div>
+
+			<div class="row">
+				<img src="img/c.jpg">
+			</div>
+
+			<div class="row">
+				<img src="img/java.png">
+			</div>
+
+			<div class="row">
+				<img src="img/mysql.png">
+			</div>
+
+			<div class="row">
+				<img src="img/javascript.png">
+			</div>
+		</div>
+
+	</section>
+
+	<!-----------Portfolio Section--------------->
+	<section class="work" id="work">
+		<div class="main-text">
+			<h2><span>Updated </span>Work</h2>
+		</div>
+		<div class="portfolio-content">
+
+			<div class="row">
+				<img id="github" src="img/github.jpg">
+				<div class="layer">
+					<a href="https://github.com/tiwarigauri"> <i class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img id="coding" src="img/codingninjas.jpg">
+				<div class="layer">
+
+					<a href="https://www.codingninjas.com/studio/profile/tiwarigauri"> <i
+							class='bx bx-link-external'></i></a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-----------Learning Section--------------->
+	<section class="learning" id="learning">
+		<div class="main-text">
+			<h2><span>Currently </span>Learning</h2>
+		</div>
+		<div class="portfolio-content">
+
+			<div class="row">
+				<img src="img/mongodb.png">
+			</div>
+
+			<div class="row">
+				<img src="img/expressjs.png">
+			</div>
+
+			<div class="row">
+				<img src="img/reactjs.png">
+			</div>
+
+			<div class="row">
+				<img src="img/nodejs.png">
+			</div>
+		</div>
+
+	</section>
+
+
+	<!------------------Contact section------------>
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact <span>Me!</span></h2>
+			<h4>If you have any project in your mind.</h4>
+		</div>
+		<div class="contact-text">
+			<br />
+			<div class="list">
+				<div class="text">
+					<a href="https://web.whatsapp.com/" style="color: white;"> <img src="img/whatsapp.jpg"></a>
+				</div>
+				<div class="text">
+					<h3>+91 8808961316</h3>
+				</div>
+			</div>
+
+			<div class="list">
+
+				<div class="text">
+					<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" style="color: white;">
+						<img src="img/gmail.jpg"></a>
+				</div>
+				<div class="text">
+					<h3>gaury.tiwary@gmail.com</h3>
+				</div>
+			</div>
+
+			<div class="rows">
+				<a href="https://www.linkedin.com/in/tiwarigauri"> <img id="linkedin" src="img/linkedin.jpg"></a>
+			</div>
+
+		</div>
+
+
+	</section>
+
+	<!---------End Section---------->
+	<section class="end">
+		<div class="last-text">
+			<p>Developed By Gauri Tiwari</p>
+		</div>
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</section>
+	<script>
+		let animat = new Typed('#ani', {
+			strings: ["Front End Developer", "Web Developer"],
+			typeSpeed: 100,
+			backSpeed: 100,
+			loop: true,
+
+		})
+
+	</script>
+</body>
+
+</html>
